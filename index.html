@@ -1,0 +1,51 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="css/styles.css" />
+		<title>Krenovator | Currency Converter</title>
+	</head>
+	<body>
+		<div id="content-container" class="content-container">
+			<p>Amount</p>
+			<span>
+				<p id="currency-symbol"></p>
+				<input type="text" placeholder="Amount" id="amount-input"
+			/></span>
+			<p>From</p>
+			<div id="from-dropdown" class="dropdown-frame">
+				<input
+					type="text"
+					placeholder="Search.."
+					id="from-search-bar"
+					class="search-bar"
+					onkeyup="filterFunction()"
+				/>
+				<div id="from-countries" class="dropdown-countries">
+					<div id="from-inner" class="inner"></div>
+				</div>
+			</div>
+			<p>To</p>
+			<div id="to-dropdown" class="dropdown-frame">
+				<input
+					type="text"
+					placeholder="Search.."
+					id="to-search-bar"
+					class="search-bar"
+					onkeyup="filterFunction()"
+				/>
+				<div id="to-countries" class="dropdown-countries">
+					<div id="to-inner" class="inner"></div>
+				</div>
+			</div>
+		</div>
+		<script src="javascript/main.js"></script>
+	</body>
+</html>

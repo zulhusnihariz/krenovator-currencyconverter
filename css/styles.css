@@ -1,0 +1,142 @@
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-image: linear-gradient(to right, #009b72 50%, white 50%);
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	line-height: 1.3;
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 5px solid #009b72;
+	font-size: 0.875rem;
+}
+
+p {
+	color: white;
+	font-size: 1rem;
+	margin: 10px;
+	margin-bottom: 0;
+	padding: 0;
+	padding-left: 5px;
+	font-weight: 5 00;
+}
+
+span {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+
+#amount-input {
+	height: 35px;
+	margin: 10px;
+	margin-top: 5px;
+	margin-left: 0;
+	width: 220px;
+	border-left: none;
+	background-color: white;
+}
+
+#currency-symbol {
+	font-size: 0.785rem;
+	line-height: 2.5;
+	justify-content: center;
+	background-color: 223843;
+	color: white;
+	width: 40px;
+	height: 35px;
+	margin: 10px;
+	margin-right: 0;
+	margin-top: 5px;
+	border: 2px solid #959595;
+	border-bottom: 2px solid #e0e0e0;
+	border-right: none;
+	padding-left: auto;
+}
+
+.content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	height: 300px;
+	width: 300px;
+	background-color: #223843;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 5px;
+}
+
+.dropdown-frame {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 280px;
+	z-index: 2;
+}
+
+.search-bar {
+	height: 35px;
+	margin: 10px;
+	margin-top: 5px;
+}
+
+.dropdown-countries {
+	position: fixed;
+	overflow: hidden;
+	background-color: white;
+	border: 5px solid white;
+	border-top: none;
+	border-bottom: none;
+	margin: 0 10px;
+	z-index: 1;
+	max-width: 260px;
+	top: 53%;
+}
+
+.inner {
+	position: relative;
+	display: none;
+	overflow: auto;
+	max-height: 100px;
+	width: 410px;
+	z-index: 2;
+}
+
+.inner a {
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+.inner a:hover {
+	background-color: #009b72;
+	color: white;
+}
+
+.show {
+	display: block;
+}
+
+#to-dropdown {
+	z-index: 0;
+}
